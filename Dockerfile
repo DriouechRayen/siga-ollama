@@ -1,3 +1,3 @@
-﻿FROM ollama/ollama:latest
-EXPOSE 11434
-CMD ["ollama", "serve"]
+FROM ollama/ollama:latest
+EXPOSE 8080
+CMD ["ollama", "serve", "--port", "8080"]
