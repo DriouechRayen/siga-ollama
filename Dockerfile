@@ -3,11 +3,8 @@
 EXPOSE 11434
 ENV OLLAMA_HOST=0.0.0.0:11434
 
-# Script to start ollama and pull the model
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
 
+ENTRYPOINT []
 CMD ["/start.sh"]
-
-
-
